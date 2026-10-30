@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Шапка */
+.header {
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #7c3aed;
+}
+
+.btn-small {
+    background: #7c3aed;
+    color: #fff !important;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Главный экран */
+.hero {
+    padding: 100px 0 80px;
+    text-align: center;
+    background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%);
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.hero-note {
+    color: #888;
+    font-size: 15px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #7c3aed;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #7c3aed;
+    border: 2px solid #7c3aed;
+}
+
+.btn-secondary:hover {
+    background: #faf5ff;
+}
+
+.btn-large {
+    padding: 18px 40px;
+    font-size: 18px;
+}
+
+/* Секции */
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+/* Проблема */
+.problem {
+    background: #fafafa;
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.problem-item {
+    text-align: center;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.problem-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.problem-item p {
+    color: #444;
+    font-size: 16px;
+}
+
+/* Демо */
+.demo-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    background: #faf5ff;
+    padding: 48px;
+    border-radius: 24px;
+}
+
+.demo-info h3 {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.demo-info ul {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.demo-info ul li {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #ede9fe;
+}
+
+.demo-info ul li:last-child {
+    border-bottom: none;
+}
+
+/* Мокап телефона */
+.phone-mockup {
+    background: #1a1a1a;
+    border-radius: 32px;
+    padding: 12px;
+    max-width: 280px;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(124, 58, 237, 0.2);
+}
+
+.phone-screen {
+    background: #fff;
+    border-radius: 24px;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.phone-screen p {
+    margin-bottom: 10px;
+}
+
+.mock-btn {
+    background: #f0f0f0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+}
+
+/* Что входит */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.feature {
+    text-align: center;
+    padding: 32px 24px;
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.feature h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    color: #666;
+}
+
+/* Цены */
+.pricing {
+    background: #fafafa;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.price-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    border: 2px solid #f0f0f0;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.price-card:hover {
+    border-color: #7c3aed;
+    transform: translateY(-4px);
+}
+
+.price-card.featured {
+    border-color: #7c3aed;
+    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.15);
+}
+
+.badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #7c3aed;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.price-card h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 800;
+    color: #7c3aed;
+    margin-bottom: 24px;
+}
+
+.price-card ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.price-card ul li {
+    padding: 8px 0;
+    color: #555;
+    font-size: 15px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+/* Контакты */
+.contact {
+    text-align: center;
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+    color: #fff;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 32px;
+    opacity: 0.95;
+}
+
+.contact .btn-primary {
+    background: #fff;
+    color: #7c3aed;
+}
+
+.contact .btn-primary:hover {
+    background: #faf5ff;
+}
+
+.contact-note {
+    margin-top: 24px !important;
+    font-size: 15px !important;
+}
+
+.contact-note a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Футер */
+.footer {
+    padding: 32px 0;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .demo-card {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+    }
+
+    .hero {
+        padding: 60px 0 40px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
